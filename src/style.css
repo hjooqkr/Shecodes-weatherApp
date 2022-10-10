@@ -56,6 +56,12 @@ h2 {
   font-weight: normal;
   color: rgb(119, 116, 117);
 }
+#description:first-letter {
+  text-transform: capitalize;
+  margin-left: 40px;
+  font-size: 20px;
+}
+
 .today-temp {
   font-size: 65px;
   position: relative;
