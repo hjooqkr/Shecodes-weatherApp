@@ -88,3 +88,7 @@ li.highest {
 li.lowest {
   letter-spacing: 0.5px;
 }
+.github-link {
+  display: block;
+  text-align: center;
+}
