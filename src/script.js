@@ -28,8 +28,9 @@ let today = document.querySelector("#today");
 today.innerHTML = formattedTime(now);
 
 function showWeather(response) {
-  document.querySelector("#current-temp").innerHTML =
-    Math.round(response.data.main.temp) + "º";
+  document.querySelector("#current-temp").innerHTML = Math.round(
+    response.data.main.temp
+  );
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temp-max").innerHTML = Math.round(
     response.data.main.temp_max

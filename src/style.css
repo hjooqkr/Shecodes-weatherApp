@@ -1,19 +1,28 @@
 .card {
   margin: 30px auto;
+  background-color: gra;
 }
 .searchcity {
   margin: 10px auto;
 }
 .searchbutton {
-  margin-left: 5px;
+  margin-left: 15px;
   color: white;
-  background-color: blueviolet;
+  background-color: #b158fa;
   border-radius: 3px;
   border: 0;
   line-height: 35px;
+  transition: all 200ms ease-in-out;
+}
+
+.searchbutton:hover {
+  color: #b158fa;
+  background: white;
+  border: 1px solid #b158fa;
 }
 .searching {
   text-align: center;
+  margin: 10px, 15px;
   font-size: 20px;
 }
 .cities {
@@ -37,19 +46,19 @@
 }
 h1 {
   font-size: 50px;
-  margin: 25px 25px 15px;
+  margin: 10px 35px;
   color: rgb(82, 81, 84);
 }
 h2 {
-  margin: 0 15px 0 45px;
-  font-size: 20px;
+  margin: 0 15px 0 40px;
+  font-size: 25px;
   font-weight: normal;
   color: rgb(119, 116, 117);
 }
 .today-temp {
   font-size: 65px;
   position: relative;
-  left: 50px;
+  left: 40px;
   top: 10px;
   display: inline;
 }
@@ -61,26 +70,21 @@ h2 {
   font-size: 20px;
   position: relative;
   top: 25px;
+  right: 25px;
 }
 
 .info {
   margin: 30px 0px;
   padding: 0;
   position: relative;
-  top: -15px;
+  bottom: 15px;
   left: 10px;
+  letter-spacing: 0.5px;
+  font-size: 20px;
 }
 li.highest {
   letter-spacing: 0.5px;
 }
 li.lowest {
   letter-spacing: 0.5px;
-}
-
-.current-temp {
-  display: block;
-  position: relative;
-  bottom: 55px;
-  left: 40px;
-  margin: 0 auto;
 }
