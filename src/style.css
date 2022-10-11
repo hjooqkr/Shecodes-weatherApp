@@ -68,9 +68,20 @@ h2 {
   left: 40px;
   top: 10px;
 }
-.celsius,
-.fahrenheit {
+
+.active {
+  color: black;
+  cursor: default;
+}
+
+.active:hover {
+  text-decoration: none;
+  color: black;
+}
+#celsius-temp,
+#fahrenheit-temp {
   font-size: 15px;
+  text-decoration: none;
 }
 .unit {
   font-size: 20px;
