@@ -65,10 +65,13 @@ h2 {
 .today-temp {
   font-size: 65px;
   position: relative;
-  left: 40px;
-  top: 10px;
+  left: 20px;
+  top: 30px;
 }
-
+img {
+  position: relative;
+  bottom: 4px;
+}
 .active {
   color: black;
   cursor: default;

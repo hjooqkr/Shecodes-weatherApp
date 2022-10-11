@@ -41,7 +41,7 @@ function showWeather(response) {
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#description").innerHTML =
     response.data.weather[0].description;
-
+  document.querySelector("#windspeed").innerHTML = response.data.wind.speed;
   document
     .querySelector("#icon")
     .setAttribute(
