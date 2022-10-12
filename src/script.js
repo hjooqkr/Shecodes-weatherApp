@@ -51,12 +51,6 @@ function showWeather(response) {
     response.data.main.temp
   );
   document.querySelector("#city").innerHTML = response.data.name;
-  document.querySelector("#temp-max").innerHTML = Math.round(
-    response.data.main.temp_max
-  );
-  document.querySelector("#temp-min").innerHTML = Math.round(
-    response.data.main.temp_min
-  );
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#description").innerHTML =
     response.data.weather[0].description;
