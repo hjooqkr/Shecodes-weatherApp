@@ -101,13 +101,20 @@ img {
   bottom: 10px;
   left: 10px;
   letter-spacing: 0.5px;
-  font-size: 20px;
+  font-size: 18px;
 }
 li.highest {
   letter-spacing: 0.5px;
 }
 li.lowest {
   letter-spacing: 0.5px;
+}
+.weather-forecast {
+  text-align: center;
+  line-height: 15px;
+}
+.weather-forecast-date {
+  font-size: 16px;
 }
 .github-link {
   display: block;

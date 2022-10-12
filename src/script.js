@@ -27,6 +27,28 @@ let now = new Date();
 let today = document.querySelector("#today");
 today.innerHTML = formattedTime(now);
 
+function showForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let forecastHTML = `<div class="row">`;
+  let days = ["Thu", "Fri", "Sat"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `<div class="weather-forecast" id="forecast">
+      <div class="row">
+        <div class="col-2">
+          <div class="weather-forecast-date">
+          ${day}</div>
+          <img src="http://openweathermap.org/img/wn/01d@2x.png" />
+          <span class="forecast-temp-max">
+          18</span><span class="forecast-temp-min"> 12</span> 
+          </div>
+        </div></div>`;
+    forecastHTML = forecastHTML + `</div>`;
+    forecastElement.innerHTML = forecastHTML;
+  });
+}
+
 function showWeather(response) {
   document.querySelector("#current-temp").innerHTML = Math.round(
     response.data.main.temp
@@ -41,7 +63,9 @@ function showWeather(response) {
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#description").innerHTML =
     response.data.weather[0].description;
-  document.querySelector("#windspeed").innerHTML = response.data.wind.speed;
+  document.querySelector("#windspeed").innerHTML = Math.round(
+    response.data.wind.speed
+  );
   document
     .querySelector("#icon")
     .setAttribute(
@@ -91,4 +115,6 @@ fahrenheitLink.addEventListener("click", showFahrenheit);
 
 let celsiusLink = document.querySelector("#celsius-temp");
 celsiusLink.addEventListener("click", showCelsius);
+
 search("New York");
+showForecast();

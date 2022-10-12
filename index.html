@@ -10,45 +10,75 @@
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
       crossorigin="anonymous"
     />
-    <link rel ="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="src/style.css" />
   </head>
 
   <body>
     <div class="cantainer">
-      <div class="card" style="width: 36rem;">
+      <div class="card" style="width: 36rem">
         <div class="card-body">
-          
-          <form class="searching" id="search-form"><input type="text" id="city-typed" placeholder="🔍 Enter a city" class="searchcity" style="width:400px"/>
-             <input type="submit" class="searchbutton" value="Search" style="width:90px"/></form>
-          </div>
-   
-          <h1 id="city"></h1>
-        
-          <h2 id="today"></h2>
-          <div id="description"></div>
-
-<div class="row">
-  <div class="col-6 today-temp"><img src="http://openweathermap.org/img/wn/10d@2x.png" id="icon" /><span id="current-temp"></span>
-    <span class="unit"><small class="celsius"><a href="#" id="celsius-temp" class="active">ºC </a></small>
-    <small class="bar">|</small> 
-    <small class="fahrenheit"><a href="#" id="fahrenheit-temp">ºF</a></small></span></div>
-    
-    
-  <div class="col-6"><ul class="info"><li class="highest">High:<span id="temp-max"></span>º</li>
-    <li class="lowest">Low: <span id="temp-min"></span>º</li>
-    <li class="humidity">Humidity:<span id="humidity"></span>%</li>
-  <li class="wind">Wind Speed: <span id="windspeed"></span>m/s</li></ul></div>
-    
-              
-</div>
-          </div>
-          
+          <form class="searching" id="search-form">
+            <input
+              type="text"
+              id="city-typed"
+              placeholder="🔍 Enter a city"
+              class="searchcity"
+              style="width: 400px"
+            />
+            <input
+              type="submit"
+              class="searchbutton"
+              value="Search"
+              style="width: 90px"
+            />
+          </form>
         </div>
 
-      </div>
-  <span class="github-link"><a href="https://github.com/hjooqkr/Shecodes-weatherApp" target="_blank">open source code</a> by Hyunjoo Park</span>
-    </div>
+        <h1 id="city"></h1>
+
+        <h2 id="today"></h2>
+        <div id="description"></div>
+
+        <div class="row">
+          <div class="col-6 today-temp">
+            <img
+              src="http://openweathermap.org/img/wn/10d@2x.png"
+              id="icon"
+            /><span id="current-temp"></span>
+            <span class="unit"
+              ><small class="celsius"
+                ><a href="#" id="celsius-temp" class="active">ºC </a></small
+              >
+              <small class="bar">|</small>
+              <small class="fahrenheit"
+                ><a href="#" id="fahrenheit-temp">ºF</a></small
+              ></span
+            >
+          </div>
+
+          <div class="col-6">
+            <ul class="info">
+              <li class="highest">High:<span id="temp-max"></span>º</li>
+              <li class="lowest">Low: <span id="temp-min"></span>º</li>
+              <li class="humidity">Humidity:<span id="humidity"></span>%</li>
+              <li class="wind">Wind Speed:<span id="windspeed"></span> km/h</li>
+            </ul>
+          </div>
+        </div>
+  
+  
+    <div class="weather-forecast" id="forecast"></div>
     
+      
+    </div>  </div>    </div>
+<span class="github-link"
+        ><a
+          href="https://github.com/hjooqkr/Shecodes-weatherApp"
+          target="_blank"
+          >open source code</a
+        >
+        by Hyunjoo Park</span
+      >
     <script src="src/script.js"></script>
   </body>
 </html>
