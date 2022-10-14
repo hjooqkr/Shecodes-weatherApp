@@ -48,11 +48,11 @@ function showForecast(response) {
           ${formattedDay(forecastDay.dt)}</div>
           <img src="http://openweathermap.org/img/wn/${
             forecastDay.weather[0].icon
-          }@2x.png" />
+          }@2x.png" /><div class="weather-forecast-temp">
           <span class="forecast-temp-max">${Math.round(forecastDay.temp.max)}º
           </span><span class="forecast-temp-min"> ${Math.round(
             forecastDay.temp.min
-          )}º</span> 
+          )}º</span></div> 
           </div>`;
     }
   });
@@ -61,7 +61,7 @@ function showForecast(response) {
 }
 function getForecast(coordinates) {
   let apiKey = "f29fc001ad97c677a130205f96332e8d";
-  let apiUrl = `https://api.openweathermap.org/data/3.0/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(showForecast);
 }
 function showWeather(response) {
