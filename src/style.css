@@ -26,25 +26,7 @@
   margin: 10px, 15px;
   font-size: 20px;
 }
-.cities {
-  text-align: center;
-}
 
-.paris,
-.dubai,
-.seoul,
-.la,
-.perth {
-  text-align: center;
-  margin-right: 8px;
-  width: 90px;
-  line-height: 40px;
-  color: rgb(135, 55, 221);
-  background-color: rgb(252, 207, 217);
-  border: 0;
-  border-radius: 15px;
-  font-size: 20px;
-}
 h1 {
   font-size: 50px;
   margin: 10px 35px;
@@ -65,38 +47,28 @@ h2 {
 .today-temp {
   font-size: 65px;
   position: relative;
-  left: 20px;
+  left: 30px;
   top: 10px;
+}
+#current-temp {
+  position: relative;
+  left: 10px;
 }
 img {
   position: relative;
   bottom: 4px;
 }
-.active {
-  color: black;
-  cursor: default;
-}
 
-.active:hover {
-  text-decoration: none;
-  color: black;
-}
-#celsius-temp,
-#fahrenheit-temp {
-  font-size: 15px;
-  text-decoration: none;
-}
-.unit {
+#celsius-temp {
   font-size: 20px;
   position: relative;
-  bottom: 35px;
-  left: -10px;
-  padding: 0;
+  bottom: 30px;
+  left: 15px;
 }
 
 .info {
   position: relative;
-  top: 30px;
+  top: 33px;
   left: 10px;
   letter-spacing: 0.5px;
   font-size: 18px;
@@ -107,7 +79,7 @@ img {
 }
 #icons {
   position: relative;
-  right: 10px;
+  right: 9px;
 }
 .weather-forecast-date {
   font-size: 15px;
