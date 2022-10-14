@@ -112,7 +112,9 @@ img {
 .weather-forecast-date {
   font-size: 15px;
 }
-
+.forecast-temp-min {
+  color: gray;
+}
 .github-link {
   display: block;
   text-align: center;
